@@ -8,10 +8,248 @@
     <meta charset="utf-8" />
     <meta name="ad.size" content="width=300,height=600" />
 
-    <style></style>
+    <style>
+      html {
+        width: 1440px;
+        height: 250px;
+      }
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      .creative-second {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .creative-second__content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .creative-second__img {
+        background-image: url('./images-second-page/band-bg.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+      }
+      .creative-second__rectangle {
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 1) 50%,
+          rgba(0, 0, 0, 0) 85.83%
+        );
+        position: absolute;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 1440.15px;
+        height: 178.55px;
+        top: 71.8px;
+      }
+      .creative-second__rating {
+        background-image: url('./images/rating.png');
+        position: absolute;
+        left: 1114px;
+        top: 12px;
+        background-size: 100% 100%;
+        width: 19px;
+        height: 11px;
+      }
+      .creative-second__header {
+        position: relative;
+        padding: 7.3px 0 0;
+        left: 804.31px;
+        width: 146.94px;
+        display: flex;
+      }
+      .creative-second__header-left {
+        background-image: url('./images-second-page/header-left.png');
+        background-size: 100% 100%;
+        width: 83.66px;
+        height: 14.33px;
+      }
+      .creative-second__header-right {
+        background-image: url('./images-second-page/header-right.png');
+        background-size: 100% 100%;
+        width: 62.06px;
+        height: 9.6px;
+        display: flex;
+        align-self: flex-end;
+      }
+
+      .creative-second__counter {
+        position: absolute;
+      }
+      .creative-second__title {
+        position: absolute;
+        width: 312.92px;
+        height: 69.36px;
+        left: 721.32px;
+        top: 143.29px;
+      }
+      .creative-second__title-top {
+        background-image: url('./images-second-page/title-top.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        width: 312.92px;
+        height: 37.79px;
+        margin: 0 0 2px;
+      }
+      .creative-second__title-bottom {
+        background-image: url('./images-second-page/title-bottom.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        width: 167.75px;
+        height: 29.56px;
+        margin: 0 auto;
+      }
+      .creative-second__counter {
+        position: absolute;
+        width: 341px;
+        height: 142px;
+        left: 304px;
+        top: 54px;
+      }
+      .creative-second__counter-top {
+        position: relative;
+      }
+      .creative-second__counter-top-wrapper {
+        position: relative;
+        width: 292.22px;
+        height: 14.35px;
+        margin: 0 auto;
+      }
+      .creative-second__counter-top-content {
+        background-image: url('./images-second-page/counter-top.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        position: absolute;
+        width: 292px;
+        height: 60px;
+      }
+      .creative-second__counter-center {
+        position: relative;
+        width: 292.22px;
+        height: 14.35px;
+      }
+      .creative-second__counter-items-wrapper {
+        position: relative;
+        width: 292.91px;
+        height: 67.23px;
+      }
+      .creative-second__counter-items {
+        position: absolute;
+        background-image: url('./images-second-page/counter-items.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        width: 341px;
+        height: 142px;
+      }
+      .creative-second__counter-bottom {
+        display: flex;
+        width: 253px;
+        height: 20.9px;
+        align-items: flex-start;
+      }
+      .creative-second__counter-bottom-date-wrapper {
+        position: relative;
+        width: 106.17px;
+      }
+      .creative-second__counter-bottom-date {
+        position: absolute;
+        background-image: url('./images-second-page/counter-bootom-date.png');
+        background-position: center center;
+        background-size: 100% auto;
+        display: flex;
+        align-self: center;
+        width: 126px;
+        height: 19px;
+        left: -13px;
+        top: 2px;
+      }
+      .creative-second__counter-bottom-logo {
+        background-image: url('./images-second-page/counter-bootom-logo.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: flex;
+        align-self: center;
+        width: 114px;
+        height: 16px;
+        margin: 0 1px 0 0;
+      }
+      .creative-second__counter-bottom-logo-icon {
+        background-image: url('./images-second-page/counter-bootom-logo-icon.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 29px;
+        height: 22px;
+      }
+      .creative-second__footer {
+        position: absolute;
+        background-image: url('./images-second-page/footer.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        width: 330.49px;
+        height: 25.63px;
+        left: 712.53px;
+        top: 218.46px;
+      }
+    </style>
   </head>
 
   <body>
-    <a class="creative" id="click1_area" href="#" target="_blank"> </a>
+    <a class="creative-second" id="click1_area" href="#" target="_blank">
+      <div class="creative-second__content">
+        <div class="creative-second__img"></div>
+        <div class="creative-second__rectangle"></div>
+        <div class="creative-second__rating"></div>
+        <div class="creative-second__header">
+          <div class="creative-second__header-left"></div>
+          <div class="creative-second__header-right"></div>
+        </div>
+        <div class="creative-second__title">
+          <div class="creative-second__title-top"></div>
+          <div class="creative-second__title-bottom"></div>
+        </div>
+        <div class="creative-second__counter">
+          <div class="creative-second__counter-top">
+            <div class="creative-second__counter-top-wrapper">
+              <div class="creative-second__counter-top-content"></div>
+            </div>
+          </div>
+          <div class="creative-second__counter-center">
+            <div class="creative-second__counter-items-wrapper">
+              <div class="creative-second__counter-items"></div>
+            </div>
+          </div>
+          <div class="creative-second__counter-bottom">
+            <div class="creative-second__counter-bottom-date-wrapper">
+              <div class="creative-second__counter-bottom-date"></div>
+            </div>
+            <div class="creative-second__counter-bottom-logo"></div>
+            <div class="creative-second__counter-bottom-logo-icon"></div>
+          </div>
+        </div>
+        <div class="creative-second__footer"></div>
+      </div>
+    </a>
   </body>
 </html>
