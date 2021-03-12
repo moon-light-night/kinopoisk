@@ -6,7 +6,7 @@
       src="https://awaps.yandex.net/data/lib/adsdk.js"
     ></script>
     <meta charset="utf-8" />
-    <meta name="ad.size" content="width=300,height=600" />
+    <meta name="ad.size" content="width=1440,height=250" />
 
     <style>
       html {
@@ -25,17 +25,17 @@
       *::after {
         box-sizing: inherit;
       }
-      .creative-second {
+      .creative {
         display: block;
         width: 100%;
         height: 100%;
       }
-      .creative-second__content {
+      .creative__content {
         position: relative;
         width: 100%;
         height: 100%;
       }
-      .creative-second__img {
+      .creative__img {
         background-image: url('./images-second-page/band-bg.png');
         background-repeat: no-repeat;
         position: absolute;
@@ -43,12 +43,8 @@
         width: 100%;
         height: 100%;
       }
-      .creative-second__rectangle {
-        background-image: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 1) 50%,
-          rgba(0, 0, 0, 0) 85.83%
-        );
+      .creative__rectangle {
+        background-image: url('./images-second-page/black-rec.png');
         position: absolute;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -57,7 +53,7 @@
         height: 178.55px;
         top: 71.8px;
       }
-      .creative-second__rating {
+      .creative__rating {
         background-image: url('./images/rating.png');
         position: absolute;
         left: 1114px;
@@ -66,20 +62,31 @@
         width: 19px;
         height: 11px;
       }
-      .creative-second__header {
+      .creative__header {
         position: relative;
         padding: 7.3px 0 0;
         left: 804.31px;
         width: 146.94px;
         display: flex;
+        z-index: 1;
       }
-      .creative-second__header-left {
+      .creative__header-gradient {
+        position: absolute;
+        width: 232.2px;
+        height: 63.71px;
+        left: 755.68px;
+        top: -23.25px;
+        background-image: url('./images-second-page/header-gradient.png');
+        background-size: 100% 100%;
+      }
+      .creative__header-left {
         background-image: url('./images-second-page/header-left.png');
         background-size: 100% 100%;
         width: 83.66px;
         height: 14.33px;
+        margin: 0 1px 0 0;
       }
-      .creative-second__header-right {
+      .creative__header-right {
         background-image: url('./images-second-page/header-right.png');
         background-size: 100% 100%;
         width: 62.06px;
@@ -88,17 +95,17 @@
         align-self: flex-end;
       }
 
-      .creative-second__counter {
+      .creative__counter {
         position: absolute;
       }
-      .creative-second__title {
+      .creative__title {
         position: absolute;
         width: 312.92px;
         height: 69.36px;
         left: 721.32px;
         top: 143.29px;
       }
-      .creative-second__title-top {
+      .creative__title-top {
         background-image: url('./images-second-page/title-top.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -107,7 +114,7 @@
         height: 37.79px;
         margin: 0 0 2px;
       }
-      .creative-second__title-bottom {
+      .creative__title-bottom {
         background-image: url('./images-second-page/title-bottom.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -116,92 +123,101 @@
         height: 29.56px;
         margin: 0 auto;
       }
-      .creative-second__counter {
+      .creative__counter {
         position: absolute;
         width: 341px;
         height: 142px;
         left: 304px;
-        top: 54px;
+        top: 34px;
       }
-      .creative-second__counter-top {
+      .creative__counter-top {
         position: relative;
       }
-      .creative-second__counter-top-wrapper {
+      .creative__counter-top-wrapper {
         position: relative;
         width: 292.22px;
         height: 14.35px;
         margin: 0 auto;
       }
-      .creative-second__counter-top-content {
+      .creative__counter-top-content {
         background-image: url('./images-second-page/counter-top.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
-        background-position: center center;
+        background-position: -10px 14.5px;
         position: absolute;
-        width: 292px;
+        width: 313px;
         height: 60px;
       }
-      .creative-second__counter-center {
+      .creative__counter-center {
         position: relative;
+        margin: 0 0 55px;
         width: 292.22px;
-        height: 14.35px;
+        height: 67px;
       }
-      .creative-second__counter-items-wrapper {
+      .creative__counter-items-wrapper {
         position: relative;
         width: 292.91px;
         height: 67.23px;
       }
-      .creative-second__counter-items {
+      .creative__counter-items {
         position: absolute;
         background-image: url('./images-second-page/counter-items.png');
         background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-position: center center;
+        background-size: 108.5% auto;
+        background-position: center 1px;
         width: 341px;
         height: 142px;
       }
-      .creative-second__counter-bottom {
+      .creative__counter-bottom {
         display: flex;
-        width: 253px;
-        height: 20.9px;
-        align-items: flex-start;
-      }
-      .creative-second__counter-bottom-date-wrapper {
         position: relative;
-        width: 106.17px;
+        width: 307px;
+        height: 26px;
+        margin: 0 auto;
+        align-items: center;
       }
-      .creative-second__counter-bottom-date {
-        position: absolute;
+      .creative__counter-bottom-date-wrapper {
+        position: relative;
+        margin: 0 5px 0 3px;
+        width: 129px;
+      }
+      .creative__counter-bottom-date {
+        position: relative;
         background-image: url('./images-second-page/counter-bootom-date.png');
         background-position: center center;
-        background-size: 100% auto;
+        background-size: 110% auto;
         display: flex;
         align-self: center;
-        width: 126px;
-        height: 19px;
-        left: -13px;
-        top: 2px;
+        width: 137px;
+        height: 30px;
+        top: 1px;
       }
-      .creative-second__counter-bottom-logo {
+      .creative__counter-bottom-logo {
         background-image: url('./images-second-page/counter-bootom-logo.png');
-        background-position: center center;
+        background-position: 0 -1px;
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: 101% auto;
         display: flex;
         align-self: center;
-        width: 114px;
-        height: 16px;
-        margin: 0 1px 0 0;
+        width: 186px;
+        height: 17.5px;
+        margin: 0 1px 0 5px;
       }
-      .creative-second__counter-bottom-logo-icon {
+      .creative__counter-bottom-icon-wrapper {
+        position: relative;
+        width: 37px;
+        height: 25px;
+      }
+      .creative__counter-bottom-icon {
+        position: absolute;
         background-image: url('./images-second-page/counter-bootom-logo-icon.png');
-        background-position: center center;
+        background-position: 2px center;
         background-repeat: no-repeat;
-        background-size: 100% auto;
-        width: 29px;
-        height: 22px;
+        background-size: 90% auto;
+        width: 37px;
+        height: 25px;
       }
-      .creative-second__footer {
+      .creative__footer {
         position: absolute;
         background-image: url('./images-second-page/footer.png');
         background-repeat: no-repeat;
@@ -216,39 +232,42 @@
   </head>
 
   <body>
-    <a class="creative-second" id="click1_area" href="#" target="_blank">
-      <div class="creative-second__content">
-        <div class="creative-second__img"></div>
-        <div class="creative-second__rectangle"></div>
-        <div class="creative-second__rating"></div>
-        <div class="creative-second__header">
-          <div class="creative-second__header-left"></div>
-          <div class="creative-second__header-right"></div>
+    <a class="creative" id="click1_area" href="#" target="_blank">
+      <div class="creative__content">
+        <div class="creative__img"></div>
+        <div class="creative__header-gradient"></div>
+        <div class="creative__rectangle"></div>
+        <div class="creative__rating"></div>
+        <div class="creative__header">
+          <div class="creative__header-left"></div>
+          <div class="creative__header-right"></div>
         </div>
-        <div class="creative-second__title">
-          <div class="creative-second__title-top"></div>
-          <div class="creative-second__title-bottom"></div>
+        <div class="creative__title">
+          <div class="creative__title-top"></div>
+          <div class="creative__title-bottom"></div>
         </div>
-        <div class="creative-second__counter">
-          <div class="creative-second__counter-top">
-            <div class="creative-second__counter-top-wrapper">
-              <div class="creative-second__counter-top-content"></div>
+        <div class="creative__counter">
+          <div class="creative__counter-top">
+            <div class="creative__counter-top-wrapper">
+              <div class="creative__counter-top-content"></div>
             </div>
           </div>
-          <div class="creative-second__counter-center">
-            <div class="creative-second__counter-items-wrapper">
-              <div class="creative-second__counter-items"></div>
+          <div class="creative__counter-center">
+            <div class="creative__counter-items-wrapper">
+              <div class="creative__counter-items"></div>
             </div>
           </div>
-          <div class="creative-second__counter-bottom">
-            <div class="creative-second__counter-bottom-date-wrapper">
-              <div class="creative-second__counter-bottom-date"></div>
+          <div class="creative__counter-bottom">
+            <div class="creative__counter-bottom-date-wrapper">
+              <div class="creative__counter-bottom-date"></div>
             </div>
-            <div class="creative-second__counter-bottom-logo"></div>
-            <div class="creative-second__counter-bottom-logo-icon"></div>
+            <div class="creative__counter-bottom-logo"></div>
+            <div class="creative__counter-bottom-icon-wrapper">
+              <div class="creative__counter-bottom-icon"></div>
+            </div>
           </div>
         </div>
-        <div class="creative-second__footer"></div>
+        <div class="creative__footer"></div>
       </div>
     </a>
   </body>
