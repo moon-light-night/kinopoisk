@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -31,6 +32,13 @@ module.exports = {
         ],
       },
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: './assets/300x600', to: 'assets/300x600' },
+        { from: './assets/1440x250', to: 'assets/1440x250' },
+        { from: './styles', to: 'styles' },
+      ],
+    }),
   ],
   output: {
     filename: 'bundle.js',
@@ -45,26 +53,8 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: 'asset/inline',
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      },
-      // {
-      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      //   use: [
-      //     {
-      //       loader: ImageMinimizerPlugin.loader,
-      //       options: {
-      //         severityError: 'warning', // Ignore errors on corrupted images
-      //         minimizerOptions: {
-      //           plugins: ['gifsicle'],
-      //         },
-      //       },
-      //     },
-      //   ],
-      // }
     ],
   },
 }

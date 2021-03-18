@@ -7,8 +7,45 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="creative">
-      <div class="creative__footer"></div>
-    </div>
+    <a class="creative" id="click1_area" href="#" target="_blank">
+      <div class="creative__content">
+        <div class="creative__img"></div>
+        <div class="creative__layout"></div>
+        <div class="creative__header">
+          <div class="creative-header__gradient"></div>
+          <div class="creative-header__rating"></div>
+          <div class="creative-header__caption">
+            <div class="creative-header__caption-left"></div>
+            <div class="creative-header__caption-right"></div>
+          </div>
+          <div class="creative-header__title">
+            <div class="creative-header__title-top"></div>
+            <div class="creative-header__title-bottom"></div>
+          </div>
+        </div>
+        <div class="creative__counter">
+          <div class="creative-counter__top"></div>
+          <div class="creative-counter__center">
+            <div class="creative-counter__center-items-wrapper">
+              <div class="creative-counter__center-items"></div>
+            </div>
+          </div>
+          <div class="creative-counter__bottom">
+            <div class="creative-counter__bottom-date-wrapper">
+              <div class="creative-counter__bottom-date"></div>
+            </div>
+            <div class="creative-counter__bottom-logo"></div>
+            <div class="creative-counter__bottom-logo-icon"></div>
+          </div>
+        </div>
+        <div class="creative__description"></div>
+      </div>
+    </a>
+
+    <script>
+      document.getElementById(
+        'click1_area'
+      ).href = yandexHTML5BannerApi.getClickURLNum(1)
+    </script>
   </body>
 </html>
