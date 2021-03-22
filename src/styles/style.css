@@ -1,6 +1,6 @@
 html {
-  width: 300px;
-  height: 600px;
+  width: 1440px;
+  height: 250px;
 }
 body {
   box-sizing: border-box;
@@ -14,7 +14,6 @@ body {
 *::after {
   box-sizing: inherit;
 }
-
 .creative {
   display: block;
   width: 100%;
@@ -26,192 +25,195 @@ body {
   height: 100%;
 }
 .creative__img {
-  position: absolute;
-  background-image: url('../assets/300x600x1/bg.jpg');
-  background-position: 0 0;
+  background-image: url('../assets/1440x250x1/main-bg.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: inherit;
-  height: inherit;
-}
-.creative__layout {
   position: absolute;
-  bottom: 0;
-  background-image: url('../assets/300x600x1/bottom-gradient.png');
-  background-position: center center;
   background-size: 100% 100%;
-  width: 100%;
-  height: 291.43px;
-}
-.creative__header-wrap {
-  position: relative;
   width: 100%;
   height: 100%;
 }
-.creative__header {
-  position: relative;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 19px 0 0 0;
-  margin: 0 0 316.62px;
-  width: 100%;
-  height: 101.38px;
-  z-index: 1;
-}
-.creative-header__caption {
-  display: flex;
-  width: 119px;
-  height: 13px;
-  margin: 0 0 13.45px 0;
-}
-.creative-header__gradient {
+.creative__rectangle {
+  background-image: url('../assets/1440x250x1/bottom-gradient.png');
   position: absolute;
-  top: 0;
-  background-image: url('../assets/300x600x1/header-gradient.png');
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center -80px;
-  background-size: 150%;
-  width: 100%;
-  height: 200%;
-  z-index: -1;
-}
-.creative-header__caption-left {
-  background-image: url('../assets/300x600x1/hbomax.png');
   background-position: center center;
-  background-size: 100% auto;
-  width: 69px;
-  height: 13px;
+  width: 1440.15px;
+  height: 178.55px;
+  top: 71.8px;
 }
-.creative-header__caption-right {
-  background-image: url('../assets/300x600x1/original.png');
-  background-position: center center;
-  background-size: 100% auto;
-  display: flex;
-  align-self: flex-end;
-  width: 50px;
-  height: 9px;
-}
-.creative-header__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 252.32px;
-  height: 55.93px;
-}
-.creative-header__title-top {
-  background-image: url('../assets/300x600x1/title-top.png');
-  background-position: center center;
-  background-size: 100% auto;
-  margin: 0 0 1.61px 0;
-  width: 252.32px;
-  height: 30.47px;
-}
-.creative-header__title-bottom {
-  background-image: url('../assets/300x600x1/title-bottom.png');
-  background-position: center center;
-  background-size: 100% auto;
-  width: 135.26px;
-  height: 23.84px;
-}
-.creative-header__rating {
+.creative__rating {
+  background-image: url('../assets/1440x250x1/rating.png');
   position: absolute;
-  top: 9px;
-  right: 9px;
-  background-image: url('../assets/300x600x1/rating.png');
-  background-position: center center;
-  background-size: 100% auto;
+  left: 1114px;
+  top: 12px;
+  background-size: 100% 100%;
   width: 19px;
   height: 11px;
 }
-.creative__counter {
+.creative__header {
   position: relative;
+  padding: 7.3px 0 0;
+  left: 804.31px;
+  width: 146.94px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 11px 0 0;
-  width: 300px;
-  height: 131px;
-  margin: 0 0 21.41px;
+  z-index: 1;
 }
-.creative-counter__top {
-  background-image: url('../assets/300x600x1/counter-top.png');
-  background-position: center center;
-  background-size: 100% auto;
-  width: 300px;
-  height: 24px;
-  margin: 0 0 5.85px 0;
-}
-.creative-counter__center {
-  width: 100%;
-  height: 56px;
-  margin: 0 0 13.05px 0;
-}
-.creative-counter__center-items-wrapper {
-  position: relative;
-  width: 100%;
-  height: 56px;
-}
-.creative-counter__center-items {
+.creative__header-gradient {
   position: absolute;
-  width: 100%;
-  height: 131px;
-  background-image: url('../assets/300x600x1/counter-center.png');
-  background-position: center center;
-  background-size: 100% auto;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
+  width: 232.2px;
+  height: 63.71px;
+  left: 755.68px;
+  top: -23.25px;
+  background-image: url('../assets/1440x250x1/top-gradient.png');
+  background-size: 100% 100%;
 }
-.creative-counter__bottom {
-  display: flex;
-  width: 253px;
-  height: 20.9px;
-  align-items: flex-start;
-}
-.creative-counter__bottom-date-wrapper {
-  position: relative;
-  width: 106.17px;
-}
-.creative-counter__bottom-date {
-  position: absolute;
-  background-image: url('../assets/300x600x1/counter-bottom-date.png');
-  background-position: center center;
-  background-size: 100% auto;
-  display: flex;
-  align-self: center;
-  width: 126px;
-  height: 19px;
-  left: -13px;
-  top: 2px;
-}
-.creative-counter__bottom-logo {
-  background-image: url('../assets/300x600x1/counter-bottom-logo.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  display: flex;
-  align-self: center;
-  width: 114px;
-  height: 16px;
+.creative__header-left {
+  background-image: url('../assets/1440x250x1/hbomax.png');
+  background-size: 100% 100%;
+  width: 83.66px;
+  height: 14.33px;
   margin: 0 1px 0 0;
 }
-.creative-counter__bottom-logo-icon {
-  background-image: url('../assets/300x600x1/counter-bottom-logo-icon.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  width: 29px;
-  height: 22px;
+.creative__header-right {
+  background-image: url('../assets/1440x250x1/original.png');
+  background-size: 100% 100%;
+  width: 62.06px;
+  height: 9.6px;
+  display: flex;
+  align-self: flex-end;
 }
-.creative__description {
-  position: relative;
-  background-image: url('../assets/300x600x1/footer.png');
-  background-position: center center;
+
+.creative__counter {
+  position: absolute;
+}
+.creative__title {
+  position: absolute;
+  width: 312.92px;
+  height: 69.36px;
+  left: 721.32px;
+  top: 143.29px;
+}
+.creative__title-top {
+  background-image: url('../assets/1440x250x1/liga.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 287.73px;
-  height: 22px;
+  background-position: center center;
+  width: 312.92px;
+  height: 37.79px;
+  margin: 0 0 2px;
+}
+.creative__title-bottom {
+  background-image: url('../assets/1440x250x1/snyder.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  width: 167.75px;
+  height: 29.56px;
   margin: 0 auto;
+}
+.creative__counter {
+  position: absolute;
+  width: 341px;
+  height: 142px;
+  left: 304px;
+  top: 34px;
+}
+.creative__counter-top {
+  position: relative;
+}
+.creative__counter-top-wrapper {
+  position: relative;
+  width: 292.22px;
+  height: 14.35px;
+  margin: 0 auto;
+}
+.creative__counter-top-content {
+  background-image: url('../assets/1440x250x1/premiera.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: -10px 14.5px;
+  position: absolute;
+  width: 313px;
+  height: 60px;
+}
+.creative__counter-center {
+  position: relative;
+  margin: 0 0 55px;
+  width: 292.22px;
+  height: 67px;
+}
+.creative__counter-items-wrapper {
+  position: relative;
+  width: 292.91px;
+  height: 67.23px;
+}
+.creative__counter-items {
+  position: absolute;
+  background-image: url('../assets/1440x250x1/counter.png');
+  background-repeat: no-repeat;
+  background-size: 108.5% auto;
+  background-position: center 1px;
+  width: 341px;
+  height: 142px;
+}
+.creative__counter-bottom {
+  display: flex;
+  position: relative;
+  width: 307px;
+  height: 26px;
+  margin: 0 auto;
+  align-items: center;
+}
+.creative__counter-bottom-date-wrapper {
+  position: relative;
+  margin: 0 5px 0 3px;
+  width: 129px;
+}
+.creative__counter-bottom-date {
+  position: relative;
+  background-image: url('../assets/1440x250x1/18marta.png');
+  background-position: center center;
+  background-size: 110% auto;
+  display: flex;
+  align-self: center;
+  width: 137px;
+  height: 30px;
+  top: 1px;
+}
+.creative__counter-bottom-logo {
+  background-image: url('../assets/1440x250x1/kinopoisk.png');
+  background-position: 0 -1px;
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  display: flex;
+  align-self: center;
+  width: 186px;
+  height: 17.5px;
+  margin: 0 1px 0 5px;
+}
+.creative__counter-bottom-icon-wrapper {
+  position: relative;
+  width: 37px;
+  height: 25px;
+}
+.creative__counter-bottom-icon {
+  position: absolute;
+  background-image: url('../assets/1440x250x1/hd.png');
+  background-position: 2px center;
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+  width: 37px;
+  height: 25px;
+}
+.creative__footer {
+  position: absolute;
+  background-image: url('../assets/1440x250x1/footer.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  width: 330.49px;
+  height: 25.63px;
+  left: 712.53px;
+  top: 218.46px;
 }

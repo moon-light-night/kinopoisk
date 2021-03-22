@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 
@@ -10,27 +11,29 @@ module.exports = {
   entry: './index.js',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './index2.html',
     }),
-    new ImageMinimizerPlugin({
-      minimizerOptions: {
-        plugins: [
-          ['gifsicle', { interlaced: true }],
-          ['mozjpeg', { quality: 90 }],
-          ['optipng', { optimizationLevel: 7 }],
-          [
-            'svgo',
-            {
-              plugins: [
-                {
-                  removeViewBox: false,
-                },
-              ],
-            },
-          ],
-        ],
-      },
-    }),
+    // new ImageMinimizerPlugin({
+    //   minimizerOptions: {
+    //     plugins: [
+    //       ['gifsicle', { interlaced: true }],
+    //       ['mozjpeg', { quality: 90 }],
+    //       ['optipng', { optimizationLevel: 9 }],
+    //       [
+    //         'svgo',
+    //         {
+    //           plugins: [
+    //             {
+    //               removeViewBox: false,
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //     ],
+    //   },
+    // }),
+
+    new MiniCssExtractPlugin(),
   ],
   output: {
     filename: 'bundle.js',
@@ -39,13 +42,44 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      // },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'url-loader?limit=10000000',
+          {
+            loader: 'img-loader',
+            options: {
+              plugins: [
+                require('imagemin-gifsicle')({
+                  interlaced: false,
+                }),
+                require('imagemin-mozjpeg')({
+                  progressive: true,
+                  arithmetic: false,
+                }),
+                require('imagemin-pngquant')({
+                  floyd: 0.5,
+                  speed: 2,
+                }),
+                require('imagemin-svgo')({
+                  plugins: [{ removeTitle: true }, { convertPathData: false }],
+                }),
+              ],
+            },
+          },
+        ],
+      },
+      // {
+      //   test: /\.(png|jpg)$/,
+      //   use: 'url-loader?name=[path][name].[ext]&limit=1000000',
+      // },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpg)$/,
-        use: 'url-loader?name=[path][name].[ext]&limit=1000000',
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
