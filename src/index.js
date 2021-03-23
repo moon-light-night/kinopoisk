@@ -1,3 +1,3 @@
 import _ from 'lodash'
-import './styles/style.css'
-// import './assets/300x600/bg.jpg'
+// import './styles/style.css'
+import './styles/styles_1456x180.css'

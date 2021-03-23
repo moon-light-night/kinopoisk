@@ -11,28 +11,8 @@ module.exports = {
   entry: './index.js',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index2.html',
+      template: './index_1456x180.html',
     }),
-    // new ImageMinimizerPlugin({
-    //   minimizerOptions: {
-    //     plugins: [
-    //       ['gifsicle', { interlaced: true }],
-    //       ['mozjpeg', { quality: 90 }],
-    //       ['optipng', { optimizationLevel: 9 }],
-    //       [
-    //         'svgo',
-    //         {
-    //           plugins: [
-    //             {
-    //               removeViewBox: false,
-    //             },
-    //           ],
-    //         },
-    //       ],
-    //     ],
-    //   },
-    // }),
-
     new MiniCssExtractPlugin(),
   ],
   output: {
@@ -42,10 +22,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.css$/i,
-      //   use: ['style-loader', 'css-loader'],
-      // },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
@@ -73,10 +49,6 @@ module.exports = {
           },
         ],
       },
-      // {
-      //   test: /\.(png|jpg)$/,
-      //   use: 'url-loader?name=[path][name].[ext]&limit=1000000',
-      // },
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],

@@ -1,0 +1,138 @@
+html {
+  width: 1456px;
+  height: 180px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.creative {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.creative__body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.creative__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../assets/1456x180/logo.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 243px;
+  height: 294px;
+  z-index: 1;
+}
+.creative__background {
+  background-image: url('../assets/1456x180/bg.jpg');
+  background-repeat: no-repeat;
+  margin: 0 399px 0 286px;
+  width: 771px;
+  height: 1090px;
+}
+.creative__left {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  width: 286px;
+  height: 180px;
+}
+.creative__right {
+  position: absolute;
+  background-color: black;
+  right: 0;
+  top: 0;
+  width: 399px;
+  height: 180px;
+}
+.creative__content-left {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  width: 356px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.creative__content-hbomax-original {
+  width: 152px;
+  height: 16px;
+  margin: 0 0 10.63px;
+  background-image: url('../assets/1456x180/hbomax-original.png');
+  background-repeat: no-repeat;
+}
+.creative__content-liga {
+  width: 358px;
+  height: 44px;
+  margin: 0 0 1px;
+  background-image: url('../assets/1456x180/liga.png');
+  background-repeat: no-repeat;
+}
+.creative__content-snyder {
+  width: 193px;
+  height: 35px;
+  margin: 0 0 12px;
+  background-image: url('../assets/1456x180/snyder.png');
+  background-repeat: no-repeat;
+}
+.creative__content-podpiska {
+  width: 291px;
+  height: 24px;
+  background-image: url('../assets/1456x180/podpiska.png');
+  background-repeat: no-repeat;
+}
+.creative__content-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20px;
+  right: 24px;
+  width: 481px;
+  height: 137px;
+}
+.creative__content-premiera {
+  width: 487px;
+  height: 73px;
+  margin: 0 0 14px;
+  background-image: url('../assets/1456x180/premiera.png');
+  background-repeat: no-repeat;
+}
+.creative__content-smotret-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 53px;
+  background-color: white;
+  border-radius: 5px;
+}
+.creative__content-smotret {
+  width: 121px;
+  height: 21.5px;
+  display: flex;
+  background-image: url('../assets/1456x180/smotret.png');
+  background-repeat: no-repeat;
+}
+.creative__rating {
+  position: absolute;
+  width: 33px;
+  height: 18px;
+  right: 26px;
+  bottom: 19px;
+  background-image: url('../assets/1456x180/rating.png');
+  background-repeat: no-repeat;
+}
