@@ -5,8 +5,9 @@ html {
 body {
   box-sizing: border-box;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  width: 1456px;
+  height: 180px;
+  transition-duration: 1s;
 }
 
 *,
@@ -15,27 +16,53 @@ body {
   box-sizing: inherit;
 }
 .creative {
+  position: relative;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 1456px;
+  height: 180px;
+  background-color: black !important;
+  transition-duration: 0.5s;
+}
+.creative__body-background {
+  position: absolute;
+  background-color: black;
+  width: 1456px;
+  height: 180px;
+  transition-duration: 0.5s;
+  opacity: 1;
 }
 .creative__body {
   position: relative;
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 .creative__logo {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -71px;
+  right: -71px;
+  z-index: 1;
+  opacity: 0;
+
+  width: 143px;
+  height: 180px;
+  margin: auto;
+
   background-image: url('../assets/1456x180/logo.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 243px;
-  height: 294px;
-  z-index: 1;
 }
 .creative__background {
+  background-image: url('../assets/1456x180/bg.jpg');
+  background-repeat: no-repeat;
+  margin: 0 399px 0 286px;
+  width: 771px;
+  height: 1090px;
+}
+.creative__background-second {
+  position: absolute;
+  top: 0;
   background-image: url('../assets/1456x180/bg.jpg');
   background-repeat: no-repeat;
   margin: 0 399px 0 286px;
@@ -73,6 +100,7 @@ body {
   margin: 0 0 10.63px;
   background-image: url('../assets/1456x180/hbomax-original.png');
   background-repeat: no-repeat;
+  opacity: 0;
 }
 .creative__content-liga {
   width: 358px;
@@ -80,6 +108,7 @@ body {
   margin: 0 0 1px;
   background-image: url('../assets/1456x180/liga.png');
   background-repeat: no-repeat;
+  opacity: 0;
 }
 .creative__content-snyder {
   width: 193px;
@@ -87,12 +116,14 @@ body {
   margin: 0 0 12px;
   background-image: url('../assets/1456x180/snyder.png');
   background-repeat: no-repeat;
+  opacity: 0;
 }
 .creative__content-podpiska {
   width: 291px;
   height: 24px;
   background-image: url('../assets/1456x180/podpiska.png');
   background-repeat: no-repeat;
+  opacity: 0;
 }
 .creative__content-right {
   position: absolute;
@@ -110,8 +141,11 @@ body {
   margin: 0 0 14px;
   background-image: url('../assets/1456x180/premiera.png');
   background-repeat: no-repeat;
+  opacity: 0;
 }
 .creative__content-smotret-wrap {
+}
+.creative__content-smotret-rectangle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +153,7 @@ body {
   height: 53px;
   background-color: white;
   border-radius: 5px;
+  opacity: 0;
 }
 .creative__content-smotret {
   width: 121px;
@@ -135,4 +170,5 @@ body {
   bottom: 19px;
   background-image: url('../assets/1456x180/rating.png');
   background-repeat: no-repeat;
+  opacity: 0;
 }

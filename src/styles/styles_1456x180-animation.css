@@ -1,0 +1,81 @@
+.creative__body-animation {
+  animation-name: background;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+  animation-delay: 2.3s;
+}
+.creative__body-background-animation {
+  animation-name: background-fade;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 50s;
+}
+.creative__logo-animation {
+  animation-name: logo;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.creative__background-second-animation {
+  animation-name: shake, shake;
+  animation-delay: 4.5s, 6.5s;
+  animation-duration: 0.15s, 0.15s;
+  animation-timing-function: cubic-bezier(0.93, 0.64, 0.12, 0.36),
+    cubic-bezier(0.93, 0.64, 0.12, 0.36);
+}
+.creative__content-hbomax-original-animation {
+  animation-name: liga_snyder_hbomax_premiera;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
+}
+.creative__content-liga-animation {
+  animation-name: liga_snyder_hbomax_premiera;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
+}
+.creative__content-snyder-animation {
+  animation-name: liga_snyder_hbomax_premiera;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
+}
+.creative__content-podpiska-animation {
+  animation-name: podpiska;
+  animation-duration: 1s;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.creative__content-premiera-animation {
+  animation-name: liga_snyder_hbomax_premiera;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
+}
+.creative__content-smotret-wrap-animation {
+  animation-name: blik;
+  animation-delay: 9s;
+  animation-iteration-count: 11;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.creative__content-smotret-rectangle-animation {
+  animation-name: ease-up;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.creative__rating-animation {
+  animation-name: ease-up-rating;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}

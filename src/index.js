@@ -1,3 +1,5 @@
 import _ from 'lodash'
 // import './styles/style.css'
 import './styles/styles_1456x180.css'
+import './styles/styles_1456x180-animation.css'
+import './styles/styles_1456x180-keyframes.css'
