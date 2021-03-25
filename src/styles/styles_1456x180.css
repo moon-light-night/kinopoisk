@@ -22,6 +22,7 @@ body {
   height: 180px;
   background-color: black !important;
   transition-duration: 0.5s;
+  overflow: hidden;
 }
 .creative__body-background {
   position: absolute;
@@ -30,6 +31,51 @@ body {
   height: 180px;
   transition-duration: 0.5s;
   opacity: 1;
+}
+
+.creative__empty-background {
+  position: absolute;
+  background: linear-gradient(270deg, #000000 -0.02%, rgba(0, 0, 0, 0) 22.4%),
+    linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 16.68%),
+    url('../assets/1456x180/main-bg-small.png');
+  background-repeat: no-repeat;
+  margin: 0 399px 0 286px;
+  width: 771px;
+  height: 180px;
+  opacity: 1;
+}
+.creative__first-trio {
+  position: absolute;
+  background-image: url('../assets/1456x180/f-trio-sm.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  left: 17.2%;
+  width: 771px;
+  height: 180px;
+  opacity: 1;
+  z-index: 2;
+}
+.creative__second-trio {
+  position: absolute;
+  background-image: url('../assets/1456x180/s-trio-sm.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  left: 16%;
+  width: 771px;
+  height: 180px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.creative__big-logo-shake {
+  position: absolute;
+  background-image: url('../assets/1456x180/big-logo.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  left: 31.5%;
+  top: -265px;
+  width: 427px;
+  height: 500px;
 }
 .creative__body {
   position: relative;
@@ -52,22 +98,6 @@ body {
   background-image: url('../assets/1456x180/logo.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-.creative__background {
-  background-image: url('../assets/1456x180/bg.jpg');
-  background-repeat: no-repeat;
-  margin: 0 399px 0 286px;
-  width: 771px;
-  height: 1090px;
-}
-.creative__background-second {
-  position: absolute;
-  top: 0;
-  background-image: url('../assets/1456x180/bg.jpg');
-  background-repeat: no-repeat;
-  margin: 0 399px 0 286px;
-  width: 771px;
-  height: 1090px;
 }
 .creative__left {
   position: absolute;
@@ -142,8 +172,6 @@ body {
   background-image: url('../assets/1456x180/premiera.png');
   background-repeat: no-repeat;
   opacity: 0;
-}
-.creative__content-smotret-wrap {
 }
 .creative__content-smotret-rectangle {
   display: flex;

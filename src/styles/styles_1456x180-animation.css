@@ -1,81 +1,97 @@
-.creative__body-animation {
+.anim-on .creative__body {
   animation-name: background;
   animation-fill-mode: forwards;
   animation-duration: 4s;
   animation-delay: 2.3s;
 }
-.creative__body-background-animation {
+.anim-on .creative__body-background {
   animation-name: background-fade;
   animation-fill-mode: forwards;
   animation-duration: 3s;
   animation-delay: 50s;
 }
-.creative__logo-animation {
+.anim-on .creative__logo {
   animation-name: logo;
   animation-fill-mode: forwards;
   animation-duration: 2.5s;
   animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
-.creative__background-second-animation {
-  animation-name: shake, shake;
-  animation-delay: 4.5s, 6.5s;
-  animation-duration: 0.15s, 0.15s;
-  animation-timing-function: cubic-bezier(0.93, 0.64, 0.12, 0.36),
-    cubic-bezier(0.93, 0.64, 0.12, 0.36);
-}
-.creative__content-hbomax-original-animation {
+.anim-on .creative__content-hbomax-original {
   animation-name: liga_snyder_hbomax_premiera;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
 }
-.creative__content-liga-animation {
+.anim-on .creative__content-liga {
   animation-name: liga_snyder_hbomax_premiera;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
 }
-.creative__content-snyder-animation {
+.anim-on .creative__content-snyder {
   animation-name: liga_snyder_hbomax_premiera;
   animation-fill-mode: forwards;
   animation-delay: 3s;
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
 }
-.creative__content-podpiska-animation {
+.anim-on .creative__content-podpiska {
   animation-name: podpiska;
   animation-duration: 1s;
   animation-delay: 9s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
-.creative__content-premiera-animation {
+.anim-on .creative__content-premiera {
   animation-name: liga_snyder_hbomax_premiera;
   animation-delay: 5s;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.37, 1.6, 1, 0.58);
 }
-.creative__content-smotret-wrap-animation {
+.anim-on .creative__content-smotret-wrap {
   animation-name: blik;
   animation-delay: 9s;
   animation-iteration-count: 11;
   animation-duration: 1s;
   animation-timing-function: ease;
 }
-.creative__content-smotret-rectangle-animation {
+.anim-on .creative__content-smotret-rectangle {
   animation-name: ease-up;
   animation-delay: 7s;
   animation-fill-mode: forwards;
   animation-duration: 2s;
   animation-timing-function: ease;
 }
-.creative__rating-animation {
+.anim-on .creative__rating {
   animation-name: ease-up-rating;
   animation-delay: 8s;
   animation-fill-mode: forwards;
   animation-duration: 2s;
   animation-timing-function: ease;
+}
+.anim-on .creative__big-logo-shake {
+  animation-name: shake, shake;
+  animation-delay: 4.5s, 6.5s;
+  animation-duration: 0.25s, 0.25s;
+  animation-timing-function: cubic-bezier(0.93, 0.64, 0.12, 0.36),
+    cubic-bezier(0.93, 0.64, 0.12, 0.36);
+}
+.anim-on .creative__second-trio-shake,
+.creative__second-trio {
+  animation-name: second-scale;
+  animation-delay: 3s;
+  animation-duration: 17s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.anim-on .creative__first-trio-shake,
+.creative__first-trio {
+  animation-name: first-scale;
+  animation-delay: 3s;
+  animation-duration: 17s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
