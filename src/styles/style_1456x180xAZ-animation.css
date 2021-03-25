@@ -1,0 +1,52 @@
+.anim-on .creative__body-person {
+  animation-name: person;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.anim-on .creative__body-music {
+  animation-name: music;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.anim-on .creative__body-download {
+  animation-name: download;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.anim-on .creative__body-subscribe {
+  animation-name: subscribe;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.anim-on .creative__body-price {
+  animation-name: price;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.69, 1.67, 0.88, 0.77);
+}
+.anim-on .creative__disclaimer {
+  animation-name: disclaimer-on, disclaimer-off;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: 7s, 13s;
+  animation-duration: 0.5s, 0.5s;
+  animation-timing-function: linear, linear;
+}
+.anim-on .creative__body-background {
+  animation-name: background-on, background-off;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: 0s, 60s;
+  animation-duration: 0s, 2s;
+  animation-timing-function: linear, linear;
+}
+.anim-off .creative__body-background {
+  animation-name: anim-off;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

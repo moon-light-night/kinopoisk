@@ -1,0 +1,96 @@
+@keyframes person {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes music {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(44px);
+    opacity: 1;
+  }
+}
+@keyframes download {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes subscribe {
+  0% {
+    opacity: 0;
+    transform: translateX(1456px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(938px);
+  }
+}
+@keyframes price {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes disclaimer-on {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-182px);
+  }
+}
+@keyframes disclaimer-off {
+  0% {
+    transform: translateY(-182px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes background-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes background-off {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anim-off {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
