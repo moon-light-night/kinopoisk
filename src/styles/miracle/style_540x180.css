@@ -1,0 +1,134 @@
+html {
+  width: 540px;
+  height: 180px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 540px;
+  height: 180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.creative {
+  position: relative;
+  display: block;
+  width: 540px;
+  height: 180px;
+  background-color: #a20611 !important;
+  overflow: hidden;
+}
+.creative__background {
+  position: absolute;
+  width: 540px;
+  height: 180px;
+  opacity: 0;
+  background-color: #a20611;
+}
+.creative__left-ellipse {
+  position: absolute;
+  width: 254px;
+  height: 254px;
+  left: 39px;
+  top: 69px;
+
+  background: #e32429;
+  filter: blur(120px);
+}
+.creative__right-ellipse {
+  position: absolute;
+  width: 254px;
+  height: 254px;
+  left: 257px;
+  top: -67px;
+
+  background: #e32429;
+  filter: blur(120px);
+}
+.creative__small-heart {
+  position: absolute;
+  top: 24px;
+  left: 118px;
+  width: 51px;
+  height: 34px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_540x180/small-heart.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__text {
+  position: absolute;
+  top: 67px;
+  left: 118px;
+  width: 179px;
+  height: 46px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_540x180/text.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__btn-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 123px;
+  left: 118px;
+  width: 176px;
+  height: 28px;
+  opacity: 0;
+
+  background-color: white;
+  border-radius: 5px;
+}
+.creative__btn {
+  position: absolute;
+  width: 145px;
+  height: 11px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_540x180/btn.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__rating {
+  position: absolute;
+  left: 405px;
+  top: 142px;
+  width: 21px;
+  height: 16px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_540x180/rating.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__big-heart-shadow {
+  position: absolute;
+  left: 273px;
+  top: 18px;
+  width: 171px;
+  height: 110px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_540x180/heart-shadow.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__big-heart-fill {
+  position: absolute;
+  left: 290px;
+  width: 135px;
+  height: 94px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_540x180/big-heart.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}

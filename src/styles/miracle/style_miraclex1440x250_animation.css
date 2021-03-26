@@ -1,0 +1,56 @@
+.creative__background {
+  animation-name: bg-fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.creative__small-heart {
+  animation-name: sm-heart;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.creative__text {
+  animation-name: text-fade;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.creative__big-heart-fill {
+  animation-name: bg-heart-fade;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.creative__big-heart-shadow {
+  animation-name: shadow-fade, move-shadow;
+  animation-delay: 0.5s, 1.5s;
+  animation-duration: 1s, 1.5s;
+  animation-iteration-count: 1, 15;
+  animation-fill-mode: forwards, forwards;
+  animation-timing-function: ease, linear;
+}
+.creative__btn-wrap {
+  animation-name: btn-fade;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.creative__btn {
+  animation-name: btn-fade;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.creative__rating {
+  animation-name: rating-fade;
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}

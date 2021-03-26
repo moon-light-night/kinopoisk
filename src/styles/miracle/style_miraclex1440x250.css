@@ -1,0 +1,149 @@
+html {
+  /* width: 1440px;
+  height: 250px; */
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  /* width: 1440px;
+  height: 250px; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.creative {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #a20611 !important;
+  overflow: hidden;
+}
+.creative__background {
+  position: absolute;
+  width: 1440px;
+  height: 250px;
+  margin: 0 auto;
+  top: 0;
+  left: -720px;
+  right: -720px;
+  background-color: #a20611;
+}
+.creative__left-ellipse {
+  position: absolute;
+  width: 559px;
+  height: 468px;
+  left: 260.25px;
+  top: -42.71px;
+
+  background: #e32429;
+  filter: blur(170px);
+  transform: rotate(13.48deg);
+}
+.creative__right-ellipse {
+  position: absolute;
+  width: 636px;
+  height: 636px;
+  left: 708px;
+  top: -318px;
+
+  background: #e32429;
+  filter: blur(240px);
+}
+.creative__right-ellipse {
+  position: absolute;
+  width: 636px;
+  height: 636px;
+  left: 708px;
+  top: -318px;
+
+  background: #e32429;
+  filter: blur(240px);
+}
+.creative__small-heart {
+  position: absolute;
+  top: 16px;
+  left: 315px;
+  width: 84.88px;
+  height: 57.15px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_1440x250/small-heart.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__text {
+  position: absolute;
+  top: 81px;
+  left: 315px;
+  width: 319px;
+  height: 78px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_1440x250/text.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__btn-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 178px;
+  left: 315px;
+  width: 270px;
+  height: 42px;
+  opacity: 0;
+
+  background-color: white;
+  border-radius: 8px;
+}
+.creative__btn {
+  position: absolute;
+  width: 219.65px;
+  height: 13.01px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_1440x250/podobrat.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__rating {
+  position: absolute;
+  left: 1111px;
+  top: 17px;
+  width: 23px;
+  height: 13px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_1440x250/rating.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__big-heart-shadow {
+  position: absolute;
+  left: 630px;
+  top: -7px;
+  width: 512px;
+  height: 310px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_1440x250/shadow-heart.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.creative__big-heart-fill {
+  position: absolute;
+  left: 673px;
+  top: 15px;
+  width: 430px;
+  height: 279px;
+  opacity: 0;
+
+  background-image: url('../assets/miracle_1440x250/big-heart-fill.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
